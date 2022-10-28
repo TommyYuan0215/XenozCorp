@@ -1,0 +1,83 @@
+.device {
+    background-color: white;
+	overflow: auto;
+}
+
+.device h1 {
+    text-align: center;
+    font-weight: bold;
+	color: white;
+	font-family: "Candara";
+	font-size:50px;
+	text-shadow: 3px 3px 10px #53daf9;
+	background-color: #8134D4;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 20px;
+}
+
+.device .d {
+    display: flex;
+	justify-content: center;
+}
+
+.dcolumn1 , .dcolumn2 , .dcolumn3 , .dcolumn4 , .dcolumn5 , .dcolumn6{
+        border:2px solid #53daf9;
+		background: url("../image/devicedivbg.png");
+		background-repeat:no-repeat;
+        display: inline-table;
+		background-size: cover;
+		overflow: auto;
+        width: 20%;
+        height: 10%;
+		max-height: 230px;
+	    max-width: 380px;
+        margin: 1em;
+		-webkit-transition: 0.4s;
+  		transition: 0.4s;
+}
+
+.dcolumn1:hover , .dcolumn2:hover , .dcolumn3:hover , .dcolumn4:hover , .dcolumn5:hover , .dcolumn6:hover {
+	box-shadow: 0 14px 14px 0 rgb(177, 156, 217);
+}
+
+.img {
+	position: static;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:380px;
+	height:230px;
+}
+
+.p {
+	background-color: #b19cd9;
+	color: black;
+	font-weight: 200;
+	font-size: 14px;
+	text-align: center;
+	padding:10px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.buttondev {
+  border: none;
+  color: white;
+  background-color: #0060B1;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 280px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #09CCF6;
+  color: white;
+}

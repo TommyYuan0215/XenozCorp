@@ -1,0 +1,103 @@
+.footer {                
+    background-color: #696969;
+    color: white;
+    font-size: 24px;
+}
+
+.footer .hrline {
+    max-width: 50px;
+    margin-left: 0px;
+}
+
+.footer hr {
+    width: 90%;
+}
+
+.container {
+	display: flex;
+  	justify-content: center;
+	width: 100%;
+	overflow: none;
+	
+}
+
+.column1, .column2, .column3 {
+    display: inline-table;
+	text-decoration: none;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.copy {
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.column1 li,.column2 li  {
+    font-size: 18px;
+    padding: 3px;
+}
+
+.column1 li a ,.column2 li a{
+    text-decoration: none;
+    color: white;
+}
+
+.column1 li a:hover , .column2 li a:hover{
+    text-decoration: underline;
+    color: #FC5CEC;
+}
+
+.socialmedia {
+	position: relative; 
+}
+
+.complaint {
+	position: absolute;
+	margin-left: 12em;
+	margin-top: 2em;
+}
+
+.icon-xenoz {
+	position: relative;
+	top: 12px;
+}
+
+.footer .mobile-container #myLinks3 , .footer .mobile-container #myLinks4  {
+  display: none;
+  background-color: #555; 
+  margin-left: 0.5em;
+  margin-top: 7%;
+}
+
+.footer .mobile-container a {
+	margin-left: 1em;
+	text-decoration: none;
+	color: white;
+	margin-top: 1em;
+	font-size: 20px;
+}
+
+.footer .mobile-container p {
+	margin-left: 1em;
+}
+
+.footer .mobile-container .store {
+	margin-left: 0;
+}
+
+.footer .mobile-container .socialmedia {
+	margin: 0;
+}
+
+.footer .mobile-container .complaint {
+	position: relative;
+	margin-top: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0.5em;
+}

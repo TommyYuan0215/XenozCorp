@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+}
+
+.formcenter {
+	display: flex;
+	justify-content: center;
+	background-image: url("../image/formwallpaper.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.formorder {
+	font-family: "Open Sans", sans-serif;
+	background-color: #E0E0E0;
+	width: 40%;
+	margin: 0;
+}
+
+
+fieldset {
+	background-color: #f0f0f0;
+	overflow: hidden;
+	width: 100%;
+	
+}
+
+.header1 {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header1 h1 {
+	margin: 0;
+	text-align: center;
+}
+
+.form1 {
+	padding: 32px 40px;
+	border: 2px solid black;
+	border-radius: 5px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.form1:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,1);
+}
+
+label {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.formorder label input , textarea , select, input[type="date"] {
+
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form1 input[type="radio"] , input[type="checkbox"] {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left:5%;
+	margin-bottom: 15px;
+}
+
+label input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form1 [type="submit"] , .form1 [type="reset"]{
+	background-color: purple;
+	border: 2px solid black;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #fff;
+	display: inline;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 30%;
+}
+
+h4 {
+	text-align: center;
+}
+
+input[type=submit]:hover , input[type=reset]:hover  {
+	background-color: turquoise;
+	color: black;
+  }
+
+#button {
+	text-align: center;
+}
+
+p {
+	padding: 15px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sub-btn {
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+
+
+

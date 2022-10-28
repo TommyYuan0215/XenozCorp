@@ -1,0 +1,141 @@
+.content-faq {
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+}
+
+.content-faq p , .content-faq h1 {
+	text-align: center;
+}
+
+.content-faq select {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 18px;
+	padding: 10px;
+	width: 70%;
+	margin-left : 15%;
+	margin-right: 15%;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.content-faq select:hover {
+	box-shadow: 0 3px 3px 0;
+	border: 2px solid purple;
+}
+
+.content-faq select:active {
+	box-shadow: 0 3px 3px 0;
+	border: 2px solid purple;
+}
+
+.content-faq .card-file {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 15%;
+	text-decoration: none;
+	margin-bottom: 15%;
+	font-size: 18px;
+	color: black;
+}
+
+.content-faq .card_body {
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: #D9D9D9;
+	padding : 24px;
+	transition: .5s all linear;
+}
+
+.content-faq .boxfaq {
+	margin: 24px 0 0 ;
+}
+
+.content-faq .prepaidfaqtype {
+	text-align: left;
+	font-size: 24px;
+	color: purple;
+	margin-left: 15%;
+	margin-right: 15%;
+	
+}
+
+.contactus {
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+}
+
+.contactus h1 {
+	text-align: center;
+}
+
+.contactus p {
+	text-align: center;
+}
+
+.contactus .col {
+	display: flex;
+	justify-content: center;
+}
+
+.contactus .col-cu1, .contactus .col-cu2 , .contactus .col-cu3 {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius : 20px;
+	text-align : center;
+	width : 20%;
+	padding: 24px;
+	margin-left: 20px;
+}
+
+.contactus .col-cu1 img, .contactus .col-cu2 img , .contactus .col-cu3 img {
+	width: 50px;
+	height: 50px;
+}
+
+.contactus .cubtn {
+	padding: 12px 18px;
+	border: none;
+	background-color: purple;
+	color: white;
+	cursor: pointer;
+}
+
+.contactus .cubtn:hover {
+	background-color: #FC5CEC;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.col-cu2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+}

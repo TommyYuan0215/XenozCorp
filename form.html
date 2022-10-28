@@ -1,0 +1,387 @@
+<!doctype = html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Xenoz - Order Form</title>
+	<link rel="stylesheet" href="CSS/Form.css">
+	<link rel="stylesheet" href="CSS/HeaderStyle.css">
+	<link rel="stylesheet" href="CSS/FooterStyle.css">
+	<link rel="stylesheet" href="JS/mediascreen.css">
+	<link rel="Logo Icon" href="image/Icon.png">
+	<script type="text/javascript">
+	function formValidator()
+	{
+		var name1= document.form.fname.value;
+		var n1Length = document.form.fname.value.length;
+		var name2= document.form.lname.value;
+		var n2Length = document.form.lname.value.length;
+		var em = document.form.email.value;
+		var atpos = em.indexOf("@");
+		var dotpos = em.lastIndexOf(".");
+
+
+		if(name1 == "" || name1 == null || n1Length>20){
+		alert("First name field must not be empty or more than 20 character.");
+		document.form.fname.focus();
+		return false;
+		}
+
+		if(name2 == "" || name2 == null || n2Length>30 ){
+		alert("Last name field must not be empty or more than 30 character.");
+		document.form.lname.focus();
+		return false;
+		}
+
+		if(em == null )
+		{
+		alert("Email field must not be empty");
+		document.form.email.focus();
+		return false;
+		}
+
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=em.length)
+		{
+		alert("Enter proper e-mail address");
+		document.form.email.focus();
+		return false;
+		}
+		
+		if (!document.form.tnc.checked) {
+			alert("Please checked the T&C box before proceed");
+			document.form.tnc.focus();
+			return false;
+		}
+
+		else {
+		alert("Your Personal Information are submitted to our XenozBox.");
+		}
+		return( true );
+	}
+
+	</script>
+</head>
+
+<body>
+	<div class="header"> 
+        <div class="mobile-container">
+  
+          <div class="topnav">
+            <a href="index.html" class="logo"><img src="image/Icon.png" width= "60px" height= "60px"/></a>
+            <div class="hamburger-container" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            <div id="myLinks">
+              <hr>
+              <a href="#news" onclick="myFunction2()">Product</a>
+              <div id="myLinks2">
+                  <a href="prepaid.html">Prepaid</a>
+                  <a href="postpaid.html">Postpaid</a>
+                  <a href="devices.html">Devices</a>
+              </div>
+              <a href="shops.html">Shop</a>
+              <a href="FAQ.html">Support</a>
+              <hr>
+              <p class="m-sidemenu">
+                  <a href="index.html" class="active">Personal</a> 
+                  <a href="business.html" >Business</a>
+                  <a href="aboutus.html" >About Us</a>
+              </p>
+              </div>
+          </div>
+            
+          <script language="javascript">
+              function myFunction(x) {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+              
+              function myFunction2() {
+                var x = document.getElementById("myLinks2");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+          </script>
+        </div>
+        <div class="desktop-container">
+                <div class="submenu">
+              <ul class="item-menu">
+                <li><a href="index.html" class="active">Personal</a></li>
+                <li><a href="business.html" >Business</a></li>
+                <li><a href="aboutus.html" >About Us</a></li>
+              </ul>
+            </div>
+            <ul class="mainmenu">
+              <li><a href="index.html" class="logo"><img src="image/Icon.png" width= "80px" height= "80px"/></a></li>
+              <li class="product"> <a href="javascript:void(0)" class="dropbtn" >Product</a>
+                <div class="product-content"> 
+                  <a href="prepaid.html">Prepaid</a> 
+                  <a href="postpaid.html">Postpaid</a> 
+                  <a href="devices.html">Devices</a></div>
+              </li>
+              <li><a href="shops.html">Shops</a></li>
+              <li><a href="FAQ.html">Support</a></li>
+            <hr class="header-hr">
+            </ul>
+        </div>	
+      </div> 
+	
+	<div class="formcenter">
+	<div class="formorder">
+		<form name="form" class="form1" id="form" onsubmit="return formValidator()" action="form.html" method="get" required>
+		<div class="header1">
+			<h1>Xenoz Order Form</h1>
+		</div>
+			<h4>Please fill all information correctly to prevent handled to wrong customer.</h4>
+		<fieldset>
+			<legend>User Personal Information:</legend>
+			<br>
+			<label>First Name: <input type="text" name="fname" placeholder="Enter your first name" > </label> 
+			<br>
+			<br>
+			<label>Last Name: <input type="text" name="lname" placeholder="Enter your last name" > </label>
+			<br>
+			<br>
+			<label>Email Address: <input type="email" name="email" placeholder="Enter your email-address" > </label>
+			<br>
+			<br>
+			<label>House Address : <input type="text" name="address" placeholder="Address Line 1" > </label>
+			<br>
+			<label> <input type="text" name="address" placeholder="Address Line 2"></label>
+			<br>
+			<label><input type="text" name="address" placeholder="Address Line 3"></label>
+			<br>
+				<br>
+				<label>Order Date :</label>
+				<br>
+				<input type="date" name="date" >
+				<br>
+				<br>
+				<label>Shop Type: </label><br>
+			<select id="type" name="type" onchange="showdevices('hidedevices', this); showplan('hideplan', this);" >
+				  <option value="0" >--------------Select Type--------------</option> 
+				  <option value="1">Devices</option>
+				  <option value="2">Plans</option>
+			</select><br>
+			<br>
+			
+			<div id="hidedevices" style="display: none;">
+				<label>Bundle Option :</label><br>
+				<select id="Bundle" name="bundle">
+				  <option disabled>--------------Select A Bundle--------------</option>
+								<option value="">None</option>
+								<option disabled><p>-------------APPLE-------------</p></option>
+								<option value="Ab1">Apple Bundle #1 RM 380/month</option>
+								<option value="Ab2">Apple Bundle #2 RM 330/month</option>
+								<option value="Ab3">Apple Bundle #3 RM 320/month</option>
+								<option value="Ab4">Apple Bundle #4 RM 250/month</option>
+								<option value="Ab5">Apple Bundle #5 RM 220/month</option>
+								<option disabled><p>-------------HUAWEI-------------</p></option>
+								<option value="Hb1">Huawei Bundle #1 RM 380/month</option>
+								<option value="Hb2">Huawei Bundle #2 RM 350/month</option>
+								<option value="Hb3">Huawei Bundle #3 RM 240/month</option>
+								<option value="Hb4">Huawei Bundle #4 RM 220/month</option>
+								<option disabled><p>-------------SAMSUNG-------------</p></option>
+								<option value="Sb1">Samsung Bundle #1 RM 420/month</option>
+								<option value="Sb2">Samsung Bundle #2 RM 350/month</option>
+								<option value="Sb3">Samsung Bundle #3 RM 280/month</option>
+								<option value="Sb4">Samsung Bundle #4 RM 240/month</option>
+			</select>
+			<br>
+				<label>Devices :</label><br>
+				<select id="Device" name="device">
+				  <option disabled>-----------Select A Device-----------</option>
+								<option value="">None</option>
+								<option disabled><p>-------------APPLE-------------</p></option>
+								<option value="">Iphone 12 Pro Max RM 350/month</option>
+								<option value="">Iphone 12 Pro RM 400/month</option>
+								<option value="">Iphone 12 RM 380/month</option>
+								<option value="">Iphone 11 Pro Max RM 350/month</option>
+								<option value="">Iphone 11 Pro RM 400/month</option>
+								<option value="">Iphone 11 RM 280/month</option>
+								<option value="">Iphone SE RM 200/month</option>
+								<option disabled><p>-------------HUAWEI-------------</p></option>
+								<option value="">Huawei Mate 30 Pro RM 380/month</option>
+								<option value="">Huawei Mate 30 RM 270/month</option>
+								<option value="">Huawei Nova 5T RM 130/month</option>
+								<option value="">Huawei Nova 7 5G RM 200/month</option>
+								<option value="">Huawei Nova 7SE 5G RM 150/month</option>
+								<option value="">Huawei P30 Pro RM 300/month</option>
+								<option value="">Huawei P40 Pro RM 400/month</option>
+								<option disabled><p>-------------SAMSUNG-------------</p></option>
+								<option value="">Galaxy Z Fold2 5G RM 340/month</option>
+								<option value="">Galaxy S20 Ultra 5G RM 220/month</option>
+								<option value="">Galaxy Note20 Ultra 5G RM 240/month</option>
+								<option value="">Galaxy S10 Lite RM 220/month</option>
+								<option value="">Galaxy Note10 Lite RM 180/month</option>
+								<option value="">Galaxy A71 RM 150/month</option>
+				</select>
+				 
+		  </div>
+		  <div id="hideplan" style="display: none;">
+				<p id="plan">Plan Options : <br>
+					<h3 id="prepaid">Prepaid Plans :</h3>
+					<label class="plans">
+					<label> <input type="radio" name="plan" value="Xtra"> Xenoz Xtra Prepaid RM 10 </label><br>
+
+					<h3 id="postpaid">Postpaid Plans :</h3>
+					<label>	<input type="radio" name="plan" value="Lite">Xenoz KaiZen™ Lite RM 25 </label><br>
+					<label>	<input type="radio" name="plan" value="Pro">Xenoz KaiZen™ Pro RM 58  </label><br>
+					<label>	<input type="radio" name="plan" value="Gold">Xenoz KaiZen™ Gold RM 89   </label><br>
+					<label>	<input type="radio" name="plan" value="Platinium">Xenoz KaiZen™ Platinium RM 119   </label>
+					</label>
+				</p>
+		  </div>
+		  <p><input type="checkbox" name="tnc" > <label> I have read and agree to the Terms & Condition </label></p>
+		  	
+
+			<script language="javascript">
+				function showdevices(divId, element)
+				{
+					document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+				}
+
+				function showplan(divId, element)
+				{
+					document.getElementById(divId).style.display = element.value == 2 ? 'block' : 'none';
+				}
+				
+			</script>
+			
+		</fieldset>
+		<p id="button"> <input type="submit" value="Submit Order"> <input type="reset" value="Reset"></p>
+	</form>
+	</div>
+	</div>
+	
+
+	 <div class="footer">
+		<div class="mobile-container">
+			<br>
+			<a href="javascript:void(0)" onClick="myFunction3()">About Us</a>
+			<hr>
+			<div id="myLinks3">
+				<a href="aboutus.html"> About Us </a> <br/>
+				<a href="ourcompany.html"> Our Company </a> <br/>
+				<a href="managementteam.html"> Management Team </a> <br/>
+				<a href="awards.html"> Awards </a> <br/>
+				<hr>
+			</div>
+			<a href="javascript:void(0)" onClick="myFunction4()">Support</a>
+			<hr>
+			<div id="myLinks4">
+				<a href="FAQ.html#hidecontactus"> Contact Us </a> <br/>
+				<a href="FAQ.html"> FAQ </a> <br/>
+				<a href="form.html#plan" onclick="document.getElementById('hideplan').style.display = 'block'"> Get A SIM </a> <br/>
+				<hr>
+			</div>
+			<p><img src="image/Icon2.png" width= "45px" height= "45px"/>&emsp; Xenoz Life App</p>
+			<p>
+				<a href="" class="store"><img src="image/appstore.png" width= "125px" height= "40px"/></a> 
+				<a href="" class="store"><img src="image/googleplay.png" width= "125px" height= "40px"/></a> 
+				<a href="" class="store"><img src="image/appgallery.png" width= "125px" height= "40px"/></a>
+			</p>
+			<p>Follow Us</p>
+			<hr>
+			<div class="socialmedia">
+				<a href=""><img src="image/facebook.png" width= "35px" height= "35px"/></a>
+				<a href=""><img src="image/twitter.png" width= "35px" height= "35px"/></a> 
+				<a href=""><img src="image/insta.png" width= "35px" height= "35px"/></a>
+				<a href=""><img src="image/youtube.png" width= "35px" height= "35px"/></a>
+			</div>
+			<div class="complaint">
+				<a href="http://complaint.cfm.my/"> <img src="image/redress-batch.png" /></a>
+			</div>
+			<hr>
+			<p class="copy">&copy; 2020 , Xenoz Telecommunication Sdn.Bhd. All Rights Reserved.</p>
+			<br>
+
+			<script language="javascript">
+			function myFunction3() {
+			  var x = document.getElementById("myLinks3");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+
+			function myFunction4() {
+			  var x = document.getElementById("myLinks4");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+		</div>
+		<div class="desktop-container">
+			<br>
+			<div class="container">
+				<div class="column1">
+					<ul>
+						<li style="font-size: 24;">About Xenoz</li>
+						<li><hr class="hrline"></li>
+						<li><a href="aboutus.html"> About Us </a> <br/></li>
+						<li><a href="ourcompany.html"> Our Company </a> <br/></li>
+						<li><a href="managementteam.html"> Management Team </a> <br/></li>
+						<li><a href="awards.html"> Awards </a> <br/></li>
+				   </ul>
+
+
+				</div>
+
+				<div class="column2">
+					<ul>
+						<li style="font-size: 24;">Support</li>
+						<li><hr class="hrline"></li>
+						<li><a href="FAQ.html#hidecontactus"> Contact Us </a> <br/></li>
+						<li><a href="FAQ.html"> FAQ </a> <br/></li>
+						<li><a href="form.html#plan" onclick="document.getElementById('hideplan').style.display = 'block'"> Get A SIM </a> <br/></li>
+				   </ul>
+				 </div>
+
+				<div class="column3">
+					<p><img src="image/Icon2.png" width= "45px" height= "45px" class="icon-xenoz"/>&emsp; Xenoz Life App</p>
+					<p>
+						<a href="" class="store"><img src="image/appstore.png" width= "125px" height= "40px"/></a> &emsp;
+						<a href="" class="store"><img src="image/googleplay.png" width= "125px" height= "40px"/></a> &emsp;
+						<a href="" class="store"><img src="image/appgallery.png" width= "125px" height= "40px"/></a> &emsp;
+					</p>
+					<br>
+					<div class="complaint">
+						<a href="http://complaint.cfm.my/"> <img src="image/redress-batch.png" /></a>
+					</div>
+					<p>Follow Us</p>
+					<hr class="hrline">
+					<div> 
+						<div class="socialmedia">
+							<a href=""><img src="image/facebook.png" width= "35px" height= "35px"/></a> &emsp;
+							<a href=""><img src="image/twitter.png" width= "35px" height= "35px"/></a> &emsp;
+							<a href=""><img src="image/insta.png" width= "35px" height= "35px"/></a> &emsp;
+							<a href=""><img src="image/youtube.png" width= "35px" height= "35px"/></a> &emsp;
+						</div>
+						<br>
+					</div>
+			  </div>
+
+			</div>
+			<hr /> 
+			<p class="copy">&copy; 2020 , Xenoz Telecommunication Sdn.Bhd. All Rights Reserved.</p>
+			<br />
+		</div>		
+	</div>
+	
+</body>
+</html>

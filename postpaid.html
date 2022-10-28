@@ -1,0 +1,358 @@
+<!DOCTYPE = html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Xenoz Postpaid Plan | Xenoz Telecomunication</title>
+        <link rel="stylesheet" href="CSS/HeaderStyle.css">
+        <link rel="stylesheet" href="CSS/SlideShow.css">
+        <link rel="stylesheet" href="CSS/FooterStyle.css">
+        <link rel="stylesheet" href="CSS/Postpaid.css">
+		<link rel="stylesheet" href="JS/mediascreen.css">
+        <link rel="Logo Icon" href="image/Icon.png">
+    </head>
+    <body>
+<div class="header"> 
+      <div class="mobile-container">
+
+		<div class="topnav">
+		  <a href="index.html" class="logo"><img src="image/Icon.png" width= "60px" height= "60px"/></a>
+		  <div class="hamburger-container" onclick="myFunction()">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+		  <div id="myLinks">
+			<hr>
+			<a href="#news" onclick="myFunction2()">Product</a>
+			<div id="myLinks2">
+				<a href="prepaid.html">Prepaid</a>
+				<a href="postpaid.html">Postpaid</a>
+				<a href="devices.html">Devices</a>
+			</div>
+			<a href="shops.html">Shop</a>
+			<a href="FAQ.html">Support</a>
+			<hr>
+			<p class="m-sidemenu">
+				<a href="index.html" class="active">Personal</a> 
+				<a href="business.html" >Business</a>
+				<a href="aboutus.html" >About Us</a>
+			</p>
+			</div>
+		</div>
+		  
+		<script language="javascript">
+			function myFunction(x) {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			
+			function myFunction2() {
+			  var x = document.getElementById("myLinks2");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+		</script>
+	  </div>
+      <div class="desktop-container">
+	  		<div class="submenu">
+            <ul class="item-menu">
+              <li><a href="index.html" class="active">Personal</a></li>
+              <li><a href="business.html" >Business</a></li>
+              <li><a href="aboutus.html" >About Us</a></li>
+            </ul>
+          </div>
+          <ul class="mainmenu">
+            <li><a href="index.html" class="logo"><img src="image/Icon.png" width= "80px" height= "80px"/></a></li>
+            <li class="product"> <a href="javascript:void(0)" class="dropbtn; active" >Product</a>
+              <div class="product-content"> 
+                <a href="prepaid.html">Prepaid</a> 
+                <a href="postpaid.html" class="activetab">Postpaid</a> 
+                <a href="devices.html">Devices</a></div>
+            </li>
+            <li><a href="shops.html">Shops</a></li>
+            <li><a href="FAQ.html">Support</a></li>
+			<hr class="header-hr">
+          </ul>
+	  </div>	
+    </div>
+	
+
+    <div class="slideshow">
+      <div class="mySlides slide">
+        <img src="image/Banner/Postpaid/1.png">
+      </div>
+      
+      <div class="mySlides slide">
+        <img src="image/Banner/Postpaid/2.png">
+      </div>
+		
+	  <div class="mySlides slide">
+        <img src="image/Banner/Postpaid/3.png">
+      </div>
+
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span>
+		<span class="dot"></span>
+      </div>
+
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 8000); // Change image every 2 seconds
+        }
+        </script>
+        
+  </div>
+		
+  <br>
+
+  <div class="intro_postpaid">
+    <h1>Xenoz Postpaid,<br>Malaysia's No.1 Fastest Network</h1>
+    <div class="box-postpaid">
+		<div class="box_postpaid1">
+		<img class="icon_post" src="image/Postpaid/highspeed.png">
+		<h3>Enjoy a High Speed Network with smooth experience<br>from RM 25 </h3>
+		<p>24/7 to get hisgh speed internet</p>
+		</div>
+
+		<div class="box_postpaid2">
+		<img class="icon_post" src="image/Postpaid/contract.ong.png">
+		<h3>Contract-Free</h3>
+		<p>Xenoz KaiZen™ Postpaid plans dows not come with hidden T&C</p>
+		</div>
+
+		<div class="box_postpaid3">
+		  <img class="icon_post" src="image/Postpaid/addon.png">
+		<h3>Unlimited Add-ons, Calls and SMS</h3>
+		<p>You can now scorll on social media non-stop</p>
+		</div>
+	</div>
+  </div>
+
+  <div class="bg_post1">
+    <h1 class="post_plan" id="postpaid">KaiZen™ Plans :</h1>
+  <div class="column_postPlans">
+    <ul class="price_postpaid">
+      <li class="post_head1">KaiZen™ Lite<br>RM 25</li>
+      <li><b>8GB High Speed Internet +<br>3GB Youtube</b></li>
+      <li><b>200 Min Talktime</b></li>
+      <li><b>50 SMS</b></li>
+      <li><b>-</b></li>
+      <li><b>Carry Forward to next month with Xenoz BurnProof</b></li>
+      <li><a href="form.html" class="button_post">Buy Now</a></li>
+    </ul>
+  </div>
+
+  <div class="column_postPlans">
+    <ul class="price_postpaid">
+      <li class="post_head2">KaiZen™ Pro<br>RM 58</li>
+      <li><b>15GB High Speed Internet +<br>8GB Youtube</b></li>
+      <li><b>Unlimited Talktime</b></li>
+      <li><b>200 SMS</b></li>
+      <li><b>Unlimited Chats (Whatsapp,WeChat,Line)</b></li>
+      <li><b>Carry Forward to next month with Xenoz BurnProof</b></li>
+      <li><a href="form.html" class="button_post">Buy Now</a></li>
+    </ul>
+  </div>
+
+  <div class="column_postPlans">
+    <ul class="price_postpaid">
+      <li class="post_head3">KaiZen™ Gold<br>RM 89</li>
+      <li><b>50GB High Speed Internet +<br>20GB Youtube</b></li>
+      <li><b>Unlimited Talktime</b></li>
+      <li><b>500 SMS</b></li>
+      <li><b>Unlimited Chats (Whatsapp,WeChat,Line)</b></li>
+      <li><b>Carry Forward to next month with Xenoz BurnProof</b></li>
+      <li><a href="form.html" class="button_post">Buy Now</a></li>
+    </ul>
+  </div>
+
+  <div class="column_postPlans">
+    <ul class="price_postpaid">
+      <li class="post_head4">KaiZen™ Platinium<br>RM 119</li>
+      <li><b>70GB High Speed Internet +<br>30GB Youtube</b></li>
+      <li><b>Unlimited Talktime</b></li>
+      <li><b>Unlimited SMS</b></li>
+      <li><b>Unlimited Chats (Whatsapp,WeChat,Line)</b></li>
+      <li><b>Carry Forward to next month with Xenoz BurnProof</b></li>
+      <li><a href="form.html" class="button_post">Buy Now</a></li>
+    </ul>
+  </div>
+<br>
+<br>
+</div>
+
+<div class="bg">
+  <div class="column_postAdd">  
+	  <p class="addon_post"><b>Choose as many unlimited add-ons you want :</b></p>
+	  <div class="addon-col">
+	  <div class="addon_col1">
+	  <br>
+	  <h3>Unlimited Social</h3>
+	  <img class="addon_icon" src="image/Postpaid/unlimited-social.png">
+	  <p><b>RM 10</b></p>
+	  </div>
+
+	  <div class="addon_col2">
+	  <br>
+		<h3>Unlimited Musics</h3>
+		<img class="addon_icon" src="image/Postpaid/unlimited-music.png">
+		<p><b>RM 10</b></p>
+	  </div>
+
+	  <div class="addon_col3">
+	  <br>
+		<h3>Unlimited Chats</h3>
+		<img class="addon_icon" src="image/Postpaid/unlimited-chat.png">
+		<p><b>RM 5</b></p>
+	  </div>
+	  </div>
+	  
+</div>
+</div>
+
+ <div class="footer">
+		<div class="mobile-container">
+			<br>
+			<a href="javascript:void(0)" onClick="myFunction3()">About Us</a>
+			<hr>
+			<div id="myLinks3">
+				<a href="aboutus.html"> About Us </a> <br/>
+				<a href="ourcompany.html"> Our Company </a> <br/>
+				<a href="managementteam.html"> Management Team </a> <br/>
+				<a href="awards.html"> Awards </a> <br/>
+				<hr>
+			</div>
+			<a href="javascript:void(0)" onClick="myFunction4()">Support</a>
+			<hr>
+			<div id="myLinks4">
+				<a href="FAQ.html#hidecontactus"> Contact Us </a> <br/>
+				<a href="FAQ.html"> FAQ </a> <br/>
+				<a href="form.html#plan" onclick="document.getElementById('hideplan').style.display = 'block'"> Get A SIM </a> <br/>
+				<hr>
+			</div>
+			<p><img src="image/Icon2.png" width= "45px" height= "45px"/>&emsp; Xenoz Life App</p>
+			<p>
+				<a href="" class="store"><img src="image/appstore.png" width= "125px" height= "40px"/></a> 
+				<a href="" class="store"><img src="image/googleplay.png" width= "125px" height= "40px"/></a> 
+				<a href="" class="store"><img src="image/appgallery.png" width= "125px" height= "40px"/></a>
+			</p>
+			<p>Follow Us</p>
+			<hr>
+			<div class="socialmedia">
+				<a href=""><img src="image/facebook.png" width= "35px" height= "35px"/></a>
+				<a href=""><img src="image/twitter.png" width= "35px" height= "35px"/></a> 
+				<a href=""><img src="image/insta.png" width= "35px" height= "35px"/></a>
+				<a href=""><img src="image/youtube.png" width= "35px" height= "35px"/></a>
+			</div>
+			<div class="complaint">
+				<a href="http://complaint.cfm.my/"> <img src="image/redress-batch.png" /></a>
+			</div>
+			<hr>
+			<p class="copy">&copy; 2020 , Xenoz Telecommunication Sdn.Bhd. All Rights Reserved.</p>
+			<br>
+			
+			<script language="javascript">
+			function myFunction3() {
+			  var x = document.getElementById("myLinks3");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			
+			function myFunction4() {
+			  var x = document.getElementById("myLinks4");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			</script>
+		</div>
+		<div class="desktop-container">
+			<br>
+			<div class="container">
+				<div class="column1">
+					<ul>
+						<li style="font-size: 24;">About Xenoz</li>
+						<li><hr class="hrline"></li>
+						<li><a href="aboutus.html"> About Us </a> <br/></li>
+						<li><a href="ourcompany.html"> Our Company </a> <br/></li>
+						<li><a href="managementteam.html"> Management Team </a> <br/></li>
+						<li><a href="awards.html"> Awards </a> <br/></li>
+				   </ul>
+
+
+				</div>
+
+				<div class="column2">
+					<ul>
+						<li style="font-size: 24;">Support</li>
+						<li><hr class="hrline"></li>
+						<li><a href="FAQ.html#hidecontactus"> Contact Us </a> <br/></li>
+						<li><a href="FAQ.html"> FAQ </a> <br/></li>
+						<li><a href="form.html#plan" onclick="document.getElementById('hideplan').style.display = 'block'"> Get A SIM </a> <br/></li>
+				   </ul>
+				 </div>
+
+				<div class="column3">
+					<p><img src="image/Icon2.png" width= "45px" height= "45px" class="icon-xenoz"/>&emsp; Xenoz Life App</p>
+					<p>
+						<a href="" class="store"><img src="image/appstore.png" width= "125px" height= "40px"/></a> &emsp;
+						<a href="" class="store"><img src="image/googleplay.png" width= "125px" height= "40px"/></a> &emsp;
+						<a href="" class="store"><img src="image/appgallery.png" width= "125px" height= "40px"/></a> &emsp;
+					</p>
+					<br>
+					<div class="complaint">
+						<a href="http://complaint.cfm.my/"> <img src="image/redress-batch.png" /></a>
+					</div>
+					<p>Follow Us</p>
+					<hr class="hrline">
+					<div> 
+						<div class="socialmedia">
+							<a href=""><img src="image/facebook.png" width= "35px" height= "35px"/></a> &emsp;
+							<a href=""><img src="image/twitter.png" width= "35px" height= "35px"/></a> &emsp;
+							<a href=""><img src="image/insta.png" width= "35px" height= "35px"/></a> &emsp;
+							<a href=""><img src="image/youtube.png" width= "35px" height= "35px"/></a> &emsp;
+						</div>
+						<br>
+					</div>
+			  </div>
+
+			</div>
+			<hr /> 
+			<p class="copy">&copy; 2020 , Xenoz Telecommunication Sdn.Bhd. All Rights Reserved.</p>
+			<br />
+		</div>		
+    </div>
+    </body>
+</html>

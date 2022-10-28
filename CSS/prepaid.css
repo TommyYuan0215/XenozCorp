@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+
+#intro_pre{
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+  }
+  
+.bg{
+  background-image: url("../image/bg4.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  overflow: auto;  
+}
+
+.bg2{
+  background-image:url(../image/calling.jpg);
+  background-size: cover;
+  filter:brightness(90%);
+  overflow: auto;
+  display: block;
+  text-align: center;
+}
+
+.bg3{
+	background-color: #E4E4E4;
+	overflow: auto;
+	display: block;
+	text-align: center;
+}
+
+.bg4 {
+	background-color: #f2f2f2;
+	overflow: auto;
+	display: block;
+	text-align: center;
+}
+
+.column_prepaid {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10%;
+	padding-right: 10%;
+    text-align: center;
+    overflow: auto;
+  }
+
+
+.iconplan{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  
+.prepaid_col1 , .prepaid_col2, .prepaid_col3, .prepaid_col4 {
+    position: relative;
+    display: inline-table;
+    align-content: center;
+    max-width: 250px;
+  	max-height: 810px;
+  	height: 410px;
+    border: solid blueviolet;
+    background-color: #FFDAFF;
+    margin: 20px 6px 20px 0px;
+    padding-left: 20px;
+  	padding-right: 20px;
+    box-sizing: border-box;
+    border-radius:25px;
+  }
+
+  .prepaid_text {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin: 2%;
+  }
+
+  .column_starterpre {
+	  display: inline-table;
+	  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	  margin: auto;
+	  width: 30em;
+	  padding: 10px;
+  }
+
+.button_pre {
+    border: 2.5px solid #bf40bf;
+    border-radius: 25px;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button_pre:hover {
+    background-color: #bf40bf;
+    color: white;
+  }
+ 
+.column_prePlans{
+    display: inline-table;
+    align-content: center;
+    width: 25em;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+  }
+
+.addon{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.column_preAdd {
+    display: inline-table;
+    align-content: center;
+    width: 20em;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+  }
+
+.price_prepaid {
+    list-style-type: none;
+    border: 1px solid #d6d6d6;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+.price_preAdd {
+    list-style-type: none;
+    border: 1px solid #d6d6d6;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+.price_prepaid:hover{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,1)
+  }
+
+.price_preAdd:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,1);
+  }
+
+ #Starter {
+    background-color: #bf40bf;;
+    color: white;
+    font-size: 25px;
+  }
+
+ .price_prepaid .recommend {
+    background-color:#0E0095 ;
+    color: white;
+    font-size: 20px;
+  }
+
+ .price_preAdd .daily{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+  }
+
+ .price_preAdd .weekly{
+    background-color: #1ad1ff;
+    color: white;
+    font-size: 20px;
+  }
+
+.price_preAdd .monthly{
+    background-color: #FF62F6;
+    color: white;
+    font-size: 20px;
+  }
+
+.price_preAdd .hotspot{
+    background-color: #0F912A;
+    color: white;
+    font-size: 20px;
+  }
+
+  .price_prepaid li {
+    background-color: white;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .price_preAdd li {
+    background-color: white;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px;
+    text-align: center;
+  }
+
+.price_prepaid .new {
+	display: block;
+	position: relative;
+	font-size: 16px;
+	border : 1px solid red;
+	background-color: red;
+	border-radius: 20px;
+	margin-left: 10em;
+	margin-right: 10em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	padding: 1px;
+	
+}
+  
+ 
