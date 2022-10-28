@@ -1,0 +1,92 @@
+-----------Galaxy Z Fold2 5G-----------
+
+Model: Galaxy Z Fold2 5G
+
+Storage: ROM Size (256GB)
+
+Ram: RAM Size (12GB)
+
+Camera f/r: Front Camera - Resolution-10.0 MP
+	    Rear Camera - Resolution-12.0 MP + 12.0 MP + 12.0 MP
+
+Processor: CPU Speed 3.09GHz, 2.4GHz, 1.8GHz, Octa-Core
+
+Battery: Battery Capacity 4500 mAh
+
+
+-----------Galaxy S20 Ultra 5G-----------
+
+Model: Galaxy S20 Ultra 5G
+ 
+Storage: ROM Size (128GB)
+
+Ram: RAM Size (12GB)
+
+Camera f/r: Front Camera - Resolution-40.0 MP
+	    Rear Camera - Resolution-108.0 MP + 12.0 MP + 48.0 MP + VGA
+
+Processor: CPU Speed 2.73GHz, 2.5GHz, 2GHz, Octa-Core
+
+Battery: Battery Capacity 5000 mAh
+
+
+-----------Galaxy Note20 Ultra 5G-----------
+
+Model: Galaxy Note20 Ultra 5G 
+
+Storage: ROM Size (256GB)
+
+Ram: RAM Size (12GB)
+
+Camera f/r: Front Camera - Resolution-10.0 MP
+	    Rear Camera - Resolution-108.0 MP + 12.0 MP + 12.0 MP
+
+Processor: CPU Speed 2.73GHz, 2.5GHz, 2GHz, Octa-Core
+
+Battery: Battery Capacity 4500 mAh
+
+-----------Galaxy Note10 Lite-----------
+
+Model: Galaxy Note10 Lite
+
+Storage: ROM Size (128GB)
+
+Ram: RAM Size (8GB)
+
+Camera f/r: Front Camera - Resolution-32.0 MP
+	    Rear Camera - Resolution-12.0 MP + 12.0 MP + 12.0 MP
+
+Processor: CPU Speed 2.7GHz, 1.7GHz, Octa-Core
+
+Battery: Battery Capacity 4500 mAh
+
+-----------Galaxy S10 Lite-----------
+
+Model: Galaxy S10 Lite
+
+Storage: ROM Size (128GB)
+
+Ram: RAM Size (8GB)
+
+Camera f/r: Front Camera - Resolution-32.0 MP
+	    Rear Camera - Resolution-48.0 MP + 12.0 MP + 5.0 MP
+
+Processor: CPU Speed 2.8GHz, 2.4GHz, 1.7GHz, Octa-Core
+
+Battery: Battery Capacity 4500 mAh
+
+
+-----------Galaxy A71-----------
+
+Model: Galaxy A71
+
+Storage: ROM Size (128GB)
+
+Ram: RAM Size (8GB)
+
+Camera f/r: Front Camera - Resolution-32.0 MP
+	    Rear Camera - Resolution-64.0 MP + 12.0 MP + 5.0 MP + 5.0 MP
+
+Processor: CPU Speed 2.2GHz, 1.8GHz, Octa-Core
+
+Battery: Battery Capacity 4500 mAh
